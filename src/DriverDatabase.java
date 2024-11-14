@@ -27,7 +27,10 @@ public class DriverDatabase {
         String sqlInsert = "INSERT INTO driver (name, surname, age) VALUES " +
                 "(?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?)";
 
+
         PreparedStatement pstmt = conn.prepareStatement(sqlInsert);
+
+        Statement stmt = conn.createStatement();
 
         // Заполнение параметров
         int paramIndex = 1;
