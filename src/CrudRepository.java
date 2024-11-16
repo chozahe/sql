@@ -8,6 +8,7 @@ public interface CrudRepository<T> {
     Optional<T> findById(Long id) throws SQLException;
 
     void save(T entity) throws SQLException;
+    void save(List<T> entities) throws SQLException;
     void update(T entity) throws SQLException;
     void remove(T entity) throws SQLException;
     void removeById(Long id) throws SQLException;
