@@ -30,8 +30,6 @@ public class DriverDatabase {
 
         PreparedStatement pstmt = conn.prepareStatement(sqlInsert);
 
-        Statement stmt = conn.createStatement();
-
         // Заполнение параметров
         int paramIndex = 1;
         for (String[] user : usersData) {
